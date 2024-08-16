@@ -1,0 +1,2835 @@
+/***** Font Families *****/
+
+@font-face {
+  font-family: "Panama Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Panama Regular"),
+    url("../fonts/panama-regular.otf") format("opentype"),
+    url("../fonts/panamaregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Steinbeck";
+  src: local("Steinbeck Regular"),
+    url("../fonts/steinbeck-regular.otf") format("opentype"),
+    url("../fonts/steinbeck-regular.woff") format("woff");
+}
+
+/***** Font Families *****/
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #ffffff;
+  font-family: "Steinbeck";
+}
+
+.nlrp {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nlrm {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Loader */
+.loader-div {
+  height: 100vh;
+  text-align: center;
+  padding-top: 22%;
+}
+
+/* About Us Video Section - Start */
+.video-header-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.about-video {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+}
+.text-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.text-wrapper {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  text-align: center;
+  color: #ccff00;
+  font-size: 72px;
+  line-height: 100px;
+}
+/* About Us Video Section - End */
+
+/**** Home Page ***/
+
+/**** Header Menu ****/
+
+.header-menu {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  /* box-shadow: 0px 10px 10px #ccff00; */
+  padding: 5px 0px;
+  background: rgba(204, 255, 0, 1);
+}
+
+.nav-link {
+  color: #f7204e !important;
+}
+.nav-lr-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(247, 32, 78);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,32,78, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon {
+  width: 18px !important;
+}
+
+.custom-toggler:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: #f76a88;
+}
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#logo_custom {
+  margin-top: 0px;
+  width: 150px;
+  /* margin-left: 150px; */
+}
+
+.header-window {
+  background: #c0c0a4;
+}
+
+.header-window h1 {
+  color: #ccff00;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 999;
+}
+
+.header-window .content {
+  position: fixed;
+  text-align: center;
+  bottom: 10%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+/*** Home Page About Section ***/
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+.accordion .panel.show div {
+  /* -webkit-animation: spin 0.5s linear;
+  -moz-animation: spin 0.5s linear;
+  animation: spin 0.5s linear; */
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  position: absolute;
+  top: 52px;
+  margin-left: 10px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-right: 20px !important;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.owl-theme .owl-nav {
+  display: none;
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hm-about {
+  padding: 150px 0px 150px;
+  background: #ffffff;
+}
+
+.abt-cnt p {
+  font-size: 24px;
+}
+
+/***** Home page Product Scroller ****/
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+/* .navbar-nav li:last-child a {
+  padding-right: 0 !important;
+} */
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  /* color: #FFFFFF; */
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+.nav-link {
+  color: #002a00 !important;
+  font-size: 24px;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #4e7b00;
+  border: 1px solid #ffffff;
+  border-radius: 0.25rem;
+  right: 0;
+  position: absolute;
+  top: 12px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  color: #ffffff;
+  vertical-align: middle;
+  content: "";
+  background-size: 100% 100%;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  width: 220px;
+  top: 63px;
+  font-family: "Steinbeck";
+}
+.dropdown-item {
+  font-size: 15px;
+  white-space: unset;
+  padding: 0.55rem 1.5rem;
+}
+.dropdown-menu {
+  font-family: Helvetica;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  text-transform: uppercase;
+  /* padding: .5rem 0; */
+  margin: 0.125rem 0 0;
+  font-size: 12px;
+  color: #212529;
+  text-align: center;
+  list-style: none;
+  background-color: #d0ff00;
+  background-clip: padding-box;
+  border: 0px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0px;
+}
+
+.video-background-holder {
+  position: relative;
+  /* background-color: black; */
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: auto;
+  min-height: auto;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+.video-background-overlay {
+  position: absolute;
+  z-index: 9999999999;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  left: 15%;
+}
+
+.video-background-holder .align-items-center {
+  -ms-flex-align: flex-end !important;
+  align-items: flex-end !important;
+}
+
+.video-background-holder h1 {
+  color: #ccff00;
+  font-size: 72px;
+  line-height: 100px;
+}
+
+a.dispatch-a {
+  padding-top: 0 !important;
+}
+
+.head-tag {
+  color: #ccff00;
+  font-size: 72px;
+  /* line-height: 175px; */
+  text-align: center;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+code {
+  padding: 0 0.15rem;
+  background: #f5f5f5;
+  border-radius: 0.2rem;
+}
+
+.hm-lm {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(204, 255, 0, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.hm-lm {
+  width: 100%;
+  height: 100px;
+  text-align: right;
+}
+
+.hm-lm a {
+  color: #002a00;
+  font-size: 36px;
+  line-height: 92px;
+}
+
+.hm-lm a:hover {
+  text-decoration: none;
+}
+
+.hm-lmore {
+  font-family: "Panama Regular";
+  padding: 200px 0px 0px;
+  height: 1000px;
+  font-size: 36px;
+  color: #002a00;
+  font-weight: 100;
+  background: #f9f4e7;
+  border: 25px solid #ffffff;
+}
+
+.hm-lmore span {
+  font-size: 36px;
+}
+
+.hm-lmore a {
+  font-family: steinbeck;
+  font-size: 36px;
+  color: #002a00;
+  font-weight: 300;
+  border-bottom: 4px solid #ccff00;
+}
+
+.hm-lmore a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #002a00;
+}
+
+.hm-lmore .hm-lm-go {
+  padding: 0;
+  text-align: right;
+  margin-top: 0px;
+}
+
+.hm-lmore .hm-lm-go a {
+  border-bottom: 0px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(249 244 231) 0%,
+    rgba(204, 255, 0, 1) 50%,
+    rgb(249 244 231) 100%
+  );
+  color: #002a00;
+  font-size: 36px;
+  /* width: 226px; */
+  padding: 25px 48px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 30px;
+}
+
+.hm-lmore .hm-lm-go a:hover {
+  text-decoration: none;
+}
+
+.segment-bg {
+  padding: 225px 0px;
+  background: #f9f4e7;
+  border: 25px solid #ffffff;
+  /* background: #ffffff; */
+}
+
+.segment-bg .hm-lmore {
+  font-family: "Panama Regular";
+  padding: 0px;
+  font-size: 72px;
+  color: #002a00;
+  font-weight: 100;
+}
+
+.segment-popup {
+  padding-top: 95px;
+}
+
+.segment-bg .hm-lmore a {
+  font-family: steinbeck;
+  font-size: 72px;
+  color: #002a00;
+  font-weight: 300;
+  /*border-bottom: 4px solid #CCFF00;*/
+}
+
+.segment-bg .hm-lmore span {
+  font-size: 48px;
+}
+
+.seg-lrn-link {
+  text-align: right;
+}
+
+.segment-inner h1 {
+  font-family: Panama;
+  font-size: 72px;
+  color: #002a00;
+  font-weight: 100;
+  display: ruby;
+}
+
+.seg-links-main {
+  /* text-decoration: underline; */
+  line-height: 50px;
+  margin-left: 122px;
+}
+
+.seg-links-main .row {
+  border-bottom: 0px solid #002a00;
+}
+
+.seg-links-main a {
+  font-size: 24px;
+  color: #002a00;
+  margin: 0px 0px 0px;
+}
+
+.seg-links-main a:hover {
+  font-size: 24px;
+  color: #002a00;
+  text-decoration: none;
+}
+
+.seg-links-main .hm-lmore a {
+  font-family: steinbeck;
+  font-size: 72px;
+  font-weight: 300;
+}
+
+.seg-links-main .hm-lmore a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #002a00;
+}
+
+.blue-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #0d288b;
+}
+
+.blue-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #0d288b !important;
+  color: #0d288b !important;
+}
+
+.light-green-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #0dffff;
+}
+
+.lgreen-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #0dd18b !important;
+  color: #0dd18b !important;
+}
+
+.aqua-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #0dffff !important;
+  color: #0dffff !important;
+}
+
+.mid-green-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #0dd18b;
+}
+
+.dark-green-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #005d00;
+}
+
+.green-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #005d00 !important;
+  color: #005d00 !important;
+}
+
+.yellow-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #f2e544;
+}
+
+.yellow-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #f2e544 !important;
+  color: #f2e544 !important;
+}
+
+.purple-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #9d4ca0;
+}
+
+.purple-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #9d4ca0 !important;
+  color: #9d4ca0 !important;
+}
+
+.red-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #e45163;
+}
+
+.red-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #e45163 !important;
+  color: #e45163 !important;
+}
+
+.orange-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #fd8327;
+}
+
+.orange-line-text {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #fd8327 !important;
+  color: #fd8327 !important;
+}
+
+.neon-green-line {
+  padding-bottom: 8px;
+  border-bottom: 4px solid #ccff00;
+}
+
+.hm-bk-btn {
+  margin-bottom: 150px;
+  float: left;
+}
+
+/***** Home Page Ends ****/
+/***** About Page *****/
+
+.abt-tp-content .container {
+  padding: 0px 150px;
+}
+
+.aboutsec .container {
+  padding: 0px 150px;
+}
+
+.abt-wa .container {
+  padding: 0px 150px;
+}
+.abt-team .container {
+  padding: 0px 150px;
+}
+.abt-team-mmbr .container {
+  padding: 0px 150px;
+}
+.adv-board .container {
+  padding: 0px 150px;
+}
+
+.abt-bg-top {
+  padding-top: 78px;
+  position: relative;
+}
+
+.abt-bg-top .video-background-content {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.text-about {
+  color: #cf0 !important;
+}
+
+.abt-tp-content {
+  padding: 75px 0px 75px;
+  color: #002a00;
+  font-size: 24px;
+}
+
+.aboutsec {
+  background: #a9b1c3;
+  padding: 75px 0px 75px;
+  border-bottom: 1px solid #002a00;
+  border: 15px solid #ffffff;
+}
+
+.aboutsec h3 {
+  display: inline-block;
+  padding: 5px 25px 0px;
+  color: #002a00;
+  font-size: 24px;
+  background: #ccff00;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.aboutsec p {
+  font-size: 28px;
+  color: #002a00;
+}
+
+.abt-mid-pin {
+  padding-left: 0px;
+}
+
+.abt-mid {
+  position: relative;
+  /* padding: 25px 0px 42px; */
+}
+
+.abt-mid p {
+  color: #ccff00;
+  /* font-size: 48px;
+  line-height: 64px; */
+  font-size: 24px;
+  text-align: justify;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper,
+.accordion,
+.panel,
+.panel-content {
+  float: left;
+  width: 100%;
+}
+
+.panel p {
+  margin: 0;
+  padding: 10px;
+  background: transparent;
+  margin-bottom: 10px;
+  font-size: 36px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #002a00;
+}
+
+.panel-content p {
+  margin: 0;
+  padding: 10px;
+  font-size: 24px;
+  background: transparent;
+  margin-bottom: 10px;
+  padding-right: 30%;
+}
+
+.panel-content {
+  display: none;
+}
+
+/* Ashwani */
+
+.abt-wa {
+  padding: 75px 0px 100px;
+  background: #f9f4e7;
+  border: 15px solid #ffffff;
+}
+
+.abt-wa .panel p {
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 0px;
+  padding-bottom: 10px;
+  background: transparent;
+  margin-bottom: 0px;
+  font-size: 28px;
+  padding-bottom: 8px;
+  border-bottom: 0px solid #002a00;
+  color: #002a00;
+  cursor: pointer;
+}
+
+.abt-wa .panel p div {
+  font-size: 24px;
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  display: inline-block;
+}
+
+.abt-wa .accordion {
+  border-bottom: 1px solid #002a00;
+}
+
+.abt-wa .panel-content p {
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 10px 10px 10px 0px;
+  padding-right: 10px;
+  font-size: 18px;
+  background: transparent;
+  margin-bottom: 15px;
+  padding-right: 30%;
+}
+
+.abt-wa-hd h3 {
+  color: #002a00;
+  font-size: 24px;
+}
+
+.abt-team-mmbr {
+  border-bottom: 1px solid #002a00;
+  background: #ffffff;
+  border: 15px solid #ffffff;
+  border-top: 0px;
+}
+
+.abt-team-mmbr-line {
+  background: #002a00;
+  height: 1px;
+}
+
+.abt-team {
+  padding: 100px 0px 100px;
+  border-bottom: 1px solid #002a00;
+  background: #ffffff;
+  border: 15px solid #ffffff;
+  border-bottom: 0px;
+}
+
+.abt-team-hd {
+  padding-bottom: 60px;
+  color: #002a00;
+  font-size: 36px;
+}
+
+.abt-team-cnt {
+  color: #002a00;
+  font-size: 24px;
+}
+
+.team-mmbr {
+  /* padding: 20px; */
+  text-align: center;
+  border-right: 1px solid #002a00;
+}
+
+.team-mmbr-lft-bdr {
+  border-left: 1px solid #002a00;
+}
+
+.bdr-lft {
+  border-left: 1px solid #002a00;
+}
+
+.team-mmbr-img {
+  padding: 20px;
+}
+
+.team-mmbr-img img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.team-mmbr-nm {
+  padding: 4px 0px 0px 0px;
+  text-align: center;
+  border-bottom: 0px solid #002a00;
+  border-top: 1px solid #002a00;
+}
+
+.team-mmbr-nm h4 {
+  color: #002a00;
+  font-size: 22px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.team-mmbr-nm p {
+  color: #002a00;
+  font-size: 14px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.adv-board {
+  padding: 100px 0px;
+  background: #dde3f1;
+  border: 15px solid #ffffff;
+}
+
+.adv-board h3 {
+  font-size: 36px;
+  color: #002a00;
+  padding: 0px 0px 100px 30px;
+}
+
+.adv-board h3 {
+  font-size: 30px;
+  color: #002a00;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 50px;
+}
+
+.adv-board p {
+  font-size: 18px;
+  color: #002a00;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+}
+
+/***** Services *****/
+
+.services-section {
+  background: #f9f4e7;
+  padding: 140px 0px 20px;
+}
+
+.services-main-menu {
+  background: #faf9f5;
+  padding: 78px 0px 1px;
+}
+
+.services-section h2 {
+  color: #002a00;
+  font-size: 36px;
+}
+
+.services-section h2 span {
+  font-size: 24px;
+}
+
+.services-intro {
+  background: #f9f4e7;
+  padding: 75px 0px 75px;
+}
+
+.services-intro p {
+  font-size: 30px;
+  color: #002a00;
+  line-height: 40px;
+  padding: 25px 0px 0px;
+}
+
+.srv-hd-img {
+  width: 100%;
+  text-align: center;
+}
+
+.services-points {
+  background: #ffffff;
+  padding: 75px 0px 120px;
+}
+
+.srv-pointer {
+  padding: 60px 0;
+}
+.srv-pointer .col-md-6:last-child {
+  font-size: 24px;
+}
+
+/* .srv-pointer:last-child {
+    border-bottom: 0px!important;
+} */
+
+.srv-pointer h2 {
+  font-size: 36px;
+  color: #002a00;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.srv-pointer p {
+  font-size: 18px;
+  color: #002a00;
+  text-align: left;
+  padding: 0px 0px 0px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+
+.srv-tabs {
+  padding: 0px 0px 0px;
+  background: #f9f4e7;
+  border: 15px solid #ffffff;
+  border-top: 0px;
+}
+
+.srv-tb-sec {
+}
+
+.srv-tb-sec h2 {
+  font-size: 36px;
+  color: #002a00;
+}
+
+.srv-tb-sec p {
+  font-size: 18px;
+  color: #002a00;
+}
+
+/* Services menu */
+.srvmain {
+  font-family: "Steinbeck";
+  font-size: 36px;
+  color: #002a00;
+  padding: 15px 0px 15px;
+}
+
+.srvmain a {
+  font-family: "Steinbeck";
+  font-size: 36px;
+  color: #002a00;
+}
+
+.srvmain a span {
+  font-size: 24px;
+}
+
+.srvmain a:hover {
+  font-family: "Steinbeck";
+  font-size: 36px;
+  color: #002a00;
+}
+
+.services-section .srv-head h2 a span {
+  color: #002a00;
+  text-decoration: none !important;
+}
+
+.services-section .srv-head h2 a:hover span {
+  color: #002a00;
+  text-decoration: none !important;
+}
+
+.aqua {
+  background: #0dffff;
+}
+
+.blue {
+  background: #0d288b;
+}
+
+.blue a {
+  color: #f9f4e7;
+}
+
+.purple {
+  background: #9d4ca0;
+}
+
+.red {
+  background: #e45163;
+}
+
+.orange {
+  background: #fd8327;
+}
+
+.yellow {
+  background: #f2e544;
+}
+
+.green {
+  background: #005d00;
+}
+
+.green a {
+  color: #ffffff;
+}
+
+.lgreen {
+  background: #0dd18b;
+}
+
+.bgreen {
+  background: #ccff00;
+}
+
+/*** Services Tabs ***/
+
+.srv-tb-sec {
+  padding: 50px 0px 50px 40px;
+}
+
+.srv-tabs-row {
+  padding: 25px 0px 0px;
+  height: 300px;
+}
+
+/* Agency Tabber */
+
+.tab-red-line {
+  background: #e45163;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.tabber-agency nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid #e45163;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #e45163;
+  border-top-color: #e45163;
+}
+
+.tabber-agency .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #e45163;
+  border-bottom: 0px solid #e45163;
+  padding: 0px 25px;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #e45163;
+}
+
+.tabber-agency nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #e45163;
+}
+
+.tabber-agency h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-agency h4 span {
+  text-decoration: underline;
+}
+
+.tabber-agency p {
+  /* text-transform: uppercase; */
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+/* .tabber-agency p span {
+  text-decoration: underline;
+} */
+
+/* Brands Tabber */
+
+.tabber-brands nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid #fd8327;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px;*/
+  border: 5px solid transparent;
+
+  background: #fd8327;
+  border-top-color: #fd8327;
+}
+
+.tabber-brands .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #fd8327;
+  border-bottom: 0px solid #fd8327;
+  padding: 0px 25px;
+  margin-bottom: 15px;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #fd8327;
+}
+
+.tabber-brands nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #fd8327;
+}
+
+.tabber-brands h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-brands h4 span {
+  text-decoration: underline;
+}
+
+.tabber-brands p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-brands p span {
+  text-decoration: underline;
+}
+
+.tab-brands-line {
+  background: #fd8327;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Gaming Tabber */
+
+.tabber-games nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-games nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-games nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-games nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#F2E544;
+}
+
+.tabber-games nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #f2e544;
+  border-top-color: #f2e544;
+}
+
+.tabber-games .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #f2e544;
+  border-bottom: 0px solid #f2e544;
+  padding: 0px 25px;
+}
+
+.tabber-games nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-games nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-games nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #f2e544;
+}
+
+.tabber-games nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #f2e544;
+}
+
+.tabber-games h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-games h4 span {
+  text-decoration: underline;
+}
+
+.tabber-games p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-games p span {
+  text-decoration: underline;
+}
+
+.tab-games-line {
+  background: #f2e544;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Media Owner Tabber */
+
+.tabber-media-owners nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#005d00;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #005d00;
+  border-top-color: #005d00;
+}
+
+.tabber-media-owners .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #005d00;
+  border-bottom: 0px solid #005d00;
+  padding: 0px 25px;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #005d00;
+}
+
+.tabber-media-owners nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #005d00;
+}
+
+.tabber-media-owners h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-media-owners h4 span {
+  text-decoration: underline;
+}
+
+.tabber-media-owners p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-media-owners p span {
+  text-decoration: underline;
+}
+
+.tab-media-owners-line {
+  background: #005d00;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Tabber paytv */
+
+.tabber-paytv nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#0DD18B;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #0dd18b;
+  border-top-color: #0dd18b;
+}
+
+.tabber-paytv .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #0dd18b;
+  border-bottom: 0px solid #0dd18b;
+  padding: 0px 25px;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #0dd18b;
+}
+
+.tabber-paytv nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #0dd18b;
+}
+
+.tabber-paytv h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-paytv h4 span {
+  text-decoration: underline;
+}
+
+.tabber-paytv p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-paytv p span {
+  text-decoration: underline;
+}
+
+.tab-paytv-line {
+  background: #0dd18b;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Tabber Advance */
+
+.tabber-advance nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#0DFFFF;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #0dffff;
+  border-top-color: #0dffff;
+}
+
+.tabber-advance .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #0dffff;
+  border-bottom: 0px solid #0dffff;
+  padding: 0px 25px;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #0dffff;
+}
+
+.tabber-advance nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #0dffff;
+}
+
+.tabber-advance h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-advance h4 span {
+  text-decoration: underline;
+}
+
+.tabber-advance p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-advance p span {
+  text-decoration: underline;
+}
+
+.tab-advance-line {
+  background: #0dffff;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Tabber Data */
+
+.tabber-data nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-data nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-data nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-data nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#0D288B;
+}
+
+.tabber-data nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #0d288b;
+  border-top-color: #0d288b;
+}
+
+.tabber-data .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #0d288b;
+  border-bottom: 0px solid #0d288b;
+  padding: 0px 25px;
+}
+
+.tabber-data nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-data nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-data nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #0d288b;
+}
+
+.tabber-data nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #0d288b;
+}
+
+.tabber-data h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-data h4 span {
+  text-decoration: underline;
+}
+
+.tabber-data p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-data p span {
+  text-decoration: underline;
+}
+
+.tab-data-line {
+  background: #0d288b;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Tabber Connect */
+
+.tabber-connect nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#9D4CA0;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #9d4ca0;
+  border-top-color: #9d4ca0;
+}
+
+.tabber-connect .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #9d4ca0;
+  border-bottom: 0px solid #9d4ca0;
+  padding: 0px 25px;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #9d4ca0;
+}
+
+.tabber-connect nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #9d4ca0;
+}
+
+.tabber-connect h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-connect h4 span {
+  text-decoration: underline;
+}
+
+.tabber-connect p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-connect p span {
+  text-decoration: underline;
+}
+
+.tab-connect-line {
+  background: #9d4ca0;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Tabber General */
+
+.tabber-general nav > .nav.nav-tabs {
+  border: none;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+
+.tabber-general nav > div a.nav-item.nav-link {
+  border: none;
+  font-family: "Steinbeck";
+  font-size: 18px;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 0;
+  width: 75px;
+  height: 75px;
+  border: 10px solid transparent;
+}
+
+.tabber-general nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 0;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.tabber-general nav > div a.nav-item.nav-link.active .tab-inner {
+  border: none;
+  padding: 12px 0px;
+  display: block;
+  color: #002a00;
+  background: transparent;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+
+  border: 10px solid#CCFF00;
+}
+
+.tabber-general nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* width: 10px; */
+  /* height: 10px; */
+  border: 5px solid transparent;
+
+  background: #ccff00;
+  border-top-color: #ccff00;
+}
+
+.tabber-general .tab-content {
+  background: transparent;
+  line-height: 25px;
+  border: 0px solid #ddd;
+
+  border-top: 0px solid #ccff00;
+  border-bottom: 0px solid #ccff00;
+  padding: 0px 25px;
+}
+
+.tabber-general nav > div a.nav-item.nav-link:focus {
+  border: none;
+  color: #002a00;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-general nav > div a.nav-item.nav-link:hover {
+  border: none;
+  color: #002a00;
+  padding: 0px;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}
+
+.tabber-general nav > div a.nav-item.nav-link:hover .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #ccff00;
+}
+
+.tabber-general nav > div a.nav-item.nav-link:focus .tab-inner {
+  border: none;
+  width: 75px;
+  height: 75px;
+  padding: 12px 0px;
+  color: #002a00;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: background 0.2s linear;
+  border: 10px solid #ccff00;
+}
+
+.tabber-general h4 {
+  font-family: "Steinbeck";
+  font-size: 18px;
+  color: #000000;
+}
+
+.tabber-general h4 span {
+  text-decoration: underline;
+}
+
+.tabber-general p {
+  text-transform: uppercase;
+  font-family: "Panama Regular";
+  font-size: 16px;
+  color: #000000;
+}
+
+.tabber-general p span {
+  text-decoration: underline;
+}
+
+.tab-general-line {
+  background: #ccff00;
+  height: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/**** Contact Us ******/
+
+.cntsec {
+  background: #ffffff;
+  padding: 125px 0px 125px;
+}
+
+.cntsec h3 {
+  display: inline-block;
+  padding: 5px 25px 0px;
+  color: #002a00;
+  font-size: 24px;
+  background: #ccff00;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.cntsec p {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 100;
+  display: table-row;
+}
+
+.cntsec span p {
+  font-size: 72px;
+  color: #ccff00;
+  font-weight: 100;
+}
+
+.cntsec a {
+  color: #005d00;
+  text-decoration: none;
+}
+
+.cntsec p a.email:hover {
+  color: #002a00;
+  text-decoration: none;
+}
+
+.cntsec p a.smedia {
+  color: #005d00;
+  text-decoration: none;
+}
+
+.cntsec p a.smedia:hover {
+  color: #002a00;
+  text-decoration: none;
+}
+
+/***** Footer Page *****/
+
+.footer {
+  background: rgb(137, 162, 91);
+  background: linear-gradient(
+    180deg,
+    rgba(137, 162, 91, 1) 0%,
+    rgba(1, 42, 1, 1) 4%,
+    rgba(1, 42, 1, 1) 50%,
+    rgba(1, 42, 1, 1) 93%,
+    rgba(196, 247, 0, 1) 100%
+  );
+  padding: 28px 0px 34px;
+}
+
+.footer h3 {
+  color: #f9f4e7;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0px;
+}
+
+.footer a {
+  color: #f9f4e7;
+  font-size: 24px;
+  display: block;
+  padding: 14px 0px 0px;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer p {
+  color: #f9f4e7;
+  font-size: 24px;
+  display: block;
+  padding: 6px 0px 3px;
+  margin-bottom: 0px;
+}
+
+.footer p:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/***** Responsive Screens *****/
+
+@media screen and (max-width: 1366px) {
+  .video-background-holder {
+    height: 88vh;
+  }
+
+  .h-100 {
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .video-background-holder {
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1112px) {
+  .video-background-holder {
+    height: 92vh;
+  }
+
+  .h-100 {
+    height: 96% !important;
+  }
+
+  .homepage .video-background-holder h1 {
+    font-size: 60px;
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 1026px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .video-background-content {
+    bottom: 22px;
+  }
+  .video-background-holder {
+    height: 66vh;
+  }
+
+  .h-100 {
+    height: 96% !important;
+  }
+
+  .homepage .video-background-holder h1 {
+    font-size: 60px;
+    line-height: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-lr-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .homepage .video-background-holder h1 {
+    font-size: 42px;
+  }
+
+  .video-background-holder h1 {
+    font-size: 48px;
+  }
+
+  .video-background-holder {
+    height: 65vh;
+  }
+
+  #logo_custom {
+    margin-left: 0px;
+  }
+
+  .hm-about {
+    padding: 75px 0px 75px;
+    background: #ffffff;
+  }
+
+  .hm-lmore {
+    height: 1100px;
+  }
+
+  .hm-lmore .hm-lm-go a {
+    font-size: 30px;
+    padding: 25px 28px;
+  }
+
+  .srv-tabs-row {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 834px) {
+  .video-background-content {
+    bottom: -40px;
+  }
+  .video-background-holder {
+    height: 55vh;
+  }
+
+  .homepage .video-background-holder h1 {
+    font-size: 52px;
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 570px) {
+  .video-background-content {
+    bottom: 66px !important;
+  }
+}
+@media screen and (max-width: 488px) {
+  .homepage .video-background-holder h1 {
+    font-size: 26px !important;
+  }
+  .video-background-content {
+    bottom: 92px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-background-holder {
+    height: 57vh;
+  }
+
+  .h-100 {
+    height: 96% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .loader-div {
+    padding-top: 40%;
+  }
+
+  .video-background-holder h1 {
+    line-height: 72px;
+  }
+
+  .video-background-holder h1 {
+    font-size: 36px;
+  }
+
+  .footer h3 {
+    margin-top: 35px;
+  }
+
+  .footer a {
+    padding: 15px 0px 0px;
+  }
+
+  .h-100 {
+    height: 94% !important;
+  }
+
+  .video-background-holder {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #logo_custom {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .homepage .video-background-holder h1 {
+    font-size: 36px;
+    line-height: 1;
+  }
+  .video-background-content {
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+}
+
+@media screen and (max-width: 667px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 600px) {
+  .video-background-holder h1 {
+    line-height: 140px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+}
+
+@media screen and (max-width: 538px) {
+  .h-100 {
+    height: 88% !important;
+  }
+
+  .hm-about {
+    padding: 0px 0px 75px;
+    background: #ffffff;
+  }
+
+  .video-background-holder {
+    height: 43vh;
+  }
+
+  .video-background-holder h1 {
+    line-height: 72px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-background-holder {
+    height: 38vh;
+  }
+
+  .video-background-holder h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .hm-lmore .hm-lm-go {
+    padding: 0;
+    text-align: right;
+    margin-top: 50px;
+  }
+
+  .hm-lmore {
+    font-family: "Panama Regular";
+    padding: 200px 0px;
+    height: auto;
+    font-size: 36px;
+    color: #002a00;
+    font-weight: 100;
+    background: #f9f4e7;
+    border: 25px solid #ffffff;
+  }
+
+  .hm-lmore {
+    padding: 100px 0px 100px;
+  }
+
+  .adv-board p {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .abt-mid p {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .abt-tp-content {
+    padding: 0px 0px 25px;
+  }
+
+  .seg-links-main {
+    margin-left: 0px;
+  }
+
+  .srv-pointer h2 {
+    text-align: left;
+  }
+
+  .services-section {
+    padding: 140px 15px 20px;
+  }
+
+  .cntsec h3 {
+    padding: 5px 25px 8px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+}
+
+@media screen and (max-width: 440px) {
+}
+
+@media screen and (max-width: 438px) {
+  .homepage .video-background-holder h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .hm-lmore {
+    height: 1100px;
+  }
+  .video-background-holder {
+    height: 38vh;
+  }
+
+  .video-background-holder h1 {
+    font-size: 30px;
+    line-height: 94px;
+  }
+
+  .video-background-holder video {
+    top: 46%;
+  }
+
+  .homepage .video-background-holder h1 {
+    font-size: 26px;
+    line-height: 3;
+  }
+}
+
+@media screen and (max-width: 384px) {
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 360px) {
+  .homepage .video-background-holder h1 {
+    font-size: 22px !important;
+    line-height: 3;
+  }
+  .video-background-content {
+    bottom: 108px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .video-background-holder {
+    min-height: 22rem;
+  }
+
+  .h-100 {
+    height: 86% !important;
+  }
+  .video-background-content {
+    bottom: 85px !important;
+  }
+  .video-background-holder {
+    height: 34vh;
+  }
+
+  .homepage .video-background-holder h1 {
+    font-size: 20px;
+    line-height: 3;
+  }
+}
+
+/* -- //Responsive code -- */
